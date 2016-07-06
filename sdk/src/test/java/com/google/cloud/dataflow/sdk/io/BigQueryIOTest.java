@@ -237,7 +237,7 @@ public class BigQueryIOTest implements Serializable {
     /**
      * Sets the return values to mock {@link JobService#pollJob}.
      *
-     * <p>Throws if the {@link Object} is a {@link Exception}, returns otherwise.
+     * <p>Throws if the {@link Object} is a {@link InterruptedException}, returns otherwise.
      */
     public FakeJobService pollJobReturns(Object... pollJobReturns) {
       this.pollJobReturns = pollJobReturns;
